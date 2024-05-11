@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #dce5ee; /* Fondo azul pastel claro */
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial o una fuente sans-serif */
+}
+
+header {
+    background-color: #40c9ab;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* El footer se queda abajo */
+    font-size: 18px; /* Tamaño de fuente más grande */
+}
+
+main {
+    flex-grow: 1; /* El contenido llena el espacio disponible */
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.horario-container {
+    text-align: center;
+}
+
+.horario-imagen {
+    margin-top: 20px;
+}
+
+#horario-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para la lista desplegable */
+select {
+    font-size: 20px; /* Tamaño de fuente más grande */
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="css/tienda.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>EMPOWER FIT MÁLAGA</h1>
+        </div>
+    </header>
+
+    <main>
+        <table class="productos-table">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Talla</th>
+                    <th>Añadir al carrito</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/camiseta1.png" alt="Camiseta1">
+                        <img src="images/camiseta2.png" alt="Camiseta2"></td>
+                    <td>Camiseta Empower</td>
+                    <td>Camiseta transpirable blanca con logo</td>
+                    <td>19.99€</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </td>
+                    <td><button class="agregar-carrito">Agregar al carrito</button></td>
+                </tr>
+                <tr>
+                    <td><img src="images/mochila.png" alt="Mochila"></td>
+                    <td>Mochila Empower</td>
+                    <td>Mochila amarilla con logo</td>
+                    <td>29.99€</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>
+                        <select>
+                            <option value="unica">Única</option>
+                        </select>
+                    </td>
+                    <td><button class="agregar-carrito">Agregar al carrito</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="carrito" class="carrito-cerrado">
+            <div id="carrito-pestaña" class="carrito-pestaña">Carrito</div>
+            <div id="carrito-contenido" class="carrito-contenido">
+                <h2>Carrito</h2>
+                <ul id="lista-carrito"></ul>
+                <p id="total-carrito"></p> <!-- Mostrar el total de precio -->
+                <button id="tramitar-pedido">Tramitar Pedido</button> <!-- Botón para tramitar el pedido -->
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 EMPOWER FIT MÁLAGA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/tienda.js"></script>
+</body>
+</html>

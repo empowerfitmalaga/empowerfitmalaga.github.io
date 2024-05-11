@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #dce5ee; /* Fondo azul pastel claro */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #40c9ab;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* El footer se queda abajo */
+}
+
+main {
+    flex-grow: 1; /* El contenido llena el espacio disponible */
+    padding: 20px;
+}
+
+.productos-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.productos-table th,
+.productos-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.productos-table th {
+    background-color: #f2f2f2;
+}
+
+.productos-table img {
+    max-width: 100px;
+    height: auto;
+}
+
+.agregar-carrito {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#tramitar-pedido {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.agregar-carrito:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el carrito */
+
+#carrito {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.carrito-pestaña {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.carrito-contenido {
+    display: none;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 10px 20px;
+}
+
+.carrito-contenido.show {
+    display: block;
+}
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-carrito li {
+    margin-bottom: 10px;
+}
