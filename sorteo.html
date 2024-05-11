@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo</title>
+    <link rel="stylesheet" href="css/sorteo.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Sorteo - EMPOWER FIT MÁLAGA</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="sorteo-container">
+            <img src="images/sorteo.png" alt="Sorteo del gimnasio" >
+            <form class="formulario-participar">
+                <h2>Rellene el formulario para participar</h2>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <button type="submit">Participar</button>
+                </div>
+            </form>            
+            <p id="mensaje"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 EMPOWER FIT MÁLAGA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/sorteo.js"></script>
+</body>
+</html>
